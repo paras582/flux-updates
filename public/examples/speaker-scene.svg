@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" fill="none">
+<g stroke="#282828" stroke-width=".8"><path d="m45 298 144 62 150-70M70 282l144 62M95 266l144 62M120 250l144 62M145 234l144 62M71 310l150-92M98 321l150-92M125 333l150-92M152 344l150-92"/></g>
+<ellipse cx="192" cy="315" rx="92" ry="17" fill="#000" opacity=".35"/>
+<path d="m117 86 93 29 58-36-92-28Z" fill="#ff9459" stroke="#ffa879" stroke-width=".8"/>
+<path d="m210 115 58-36v201l-58 37Z" fill="#bc4512" stroke="#e26529" stroke-width=".8"/>
+<path d="m117 86 93 29v202l-93-29Z" fill="#ff6b1f" stroke="#ff9c67" stroke-width=".8"/>
+<path d="m124 96 79 25v185l-79-25Z" fill="#252525"/>
+<g transform="matrix(.99 .305 0 1 123 97)">
+<circle cx="40" cy="46" r="23" fill="#111" stroke="#626262" stroke-width="1.4"/>
+<circle cx="40" cy="46" r="16" fill="#393939" stroke="#444"/><circle cx="40" cy="46" r="10" fill="#222"/><circle cx="40" cy="46" r="6" fill="#131313"/>
+<circle cx="40" cy="119" r="33" fill="#111" stroke="#666" stroke-width="1.5"/>
+<circle cx="40" cy="119" r="26" fill="#3b3b3b" stroke="#484848"/><circle cx="40" cy="119" r="17" fill="#252525" stroke="#4d4d4d"/><circle cx="40" cy="119" r="10" fill="#111"/>
+<g fill="#8e8e8e"><circle cx="5" cy="7" r="1.4"/><circle cx="75" cy="7" r="1.4"/><circle cx="5" cy="176" r="1.4"/><circle cx="75" cy="176" r="1.4"/></g>
+<text x="40" y="169" text-anchor="middle" font-family="Arial,sans-serif" font-size="4.5" letter-spacing="1.5" fill="#aaa">FORM / 01</text>
+</g>
+<path d="m234 115 17-10M234 127l17-10M234 139l17-10" stroke="#f48147" stroke-width="2" opacity=".5"/>
+<g stroke-width="1.3"><path d="m186 330 46 17" stroke="#b1684b"/><path d="m186 330-30 20" stroke="#6b8869"/><path d="M186 330v-35" stroke="#61759a"/></g>
+<g font-family="Arial,sans-serif" font-size="7"><text x="234" y="351" fill="#b1684b">x</text><text x="147" y="357" fill="#6b8869">y</text><text x="183" y="289" fill="#61759a">z</text></g>
+</svg>

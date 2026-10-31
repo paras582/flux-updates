@@ -1,9 +1,20 @@
 "use strict";
 
 const examples = {
-  type: { prompt: "Bring the title in.\nStagger the two lines.", reply: "Added the motion.\nBoth lines stay editable.", description: "A small edit. Still your timeline." },
-  motion: { prompt: "Make the entrance softer.\nGive it a little room to settle.", reply: "Eased the keyframes.\nKept the timing in place.", description: "Adjust the motion, without leaving the comp." },
-  layout: { prompt: "Move the title to the right.\nKeep both lines aligned.", reply: "Aligned both layers.\nYour layout stays editable.", description: "Work with the layers you already have." }
+  ui: {
+    prompt: "Recreate this dashboard.\nKeep the cards, chart and text editable.",
+    reply: "Built with shape and text layers.\nEach part stays editable.",
+    description: "Reference image → editable AE layout. Illustrative example.",
+    reference: "/examples/dashboard-reference.svg", referenceAlt: "Reference image of a dashboard with cards and an orange chart", filename: "dashboard.png",
+    result: "/examples/dashboard-reference.svg", resultAlt: "Dashboard layout recreated as editable After Effects layers", layers: ["Heading", "Cards", "Chart"]
+  },
+  speaker: {
+    prompt: "Turn this 2D speaker into a 3D-style scene using native AE shape layers.",
+    reply: "Layered faces for depth.\nAnimated with an AE camera.",
+    description: "A flat reference → a dimensional shape-layer scene. Illustrative example.",
+    reference: "/examples/speaker-reference.svg", referenceAlt: "Flat front-view reference image of an orange speaker", filename: "speaker-2d.png",
+    result: "/examples/speaker-scene.svg", resultAlt: "Dimensional orange speaker scene built from layered faces with an AE camera", layers: ["Front face", "Side faces", "Camera"]
+  }
 };
 const workbench = document.querySelector(".workbench");
 const options = Array.from(document.querySelectorAll("[data-example]"));
@@ -29,6 +40,14 @@ options.forEach(button => button.addEventListener("click", () => {
   prompt.textContent = examples[name].prompt;
   reply.textContent = examples[name].reply;
   description.textContent = examples[name].description;
+  const reference = document.getElementById("demo-reference-image");
+  const result = document.getElementById("demo-result-image");
+  reference.src = examples[name].reference;
+  reference.alt = examples[name].referenceAlt;
+  result.src = examples[name].result;
+  result.alt = examples[name].resultAlt;
+  document.getElementById("demo-reference-name").textContent = examples[name].filename;
+  document.querySelectorAll("[data-layer-label]").forEach((label, index) => { label.textContent = examples[name].layers[index]; });
   options.forEach(option => {
     const active = option === button;
     option.classList.toggle("active", active);

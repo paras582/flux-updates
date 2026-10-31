@@ -38,35 +38,37 @@
         </div>
 
         <div class="demo" aria-label="Illustrative preview of Flux inside After Effects">
-          <div class="workbench" data-scene="type">
+          <div class="workbench" data-scene="ui">
             <div class="workbench-top"><span><span class="ae-mark" aria-hidden="true">Ae</span>After Effects</span><span class="window-tools" aria-hidden="true">− &nbsp; □ &nbsp; ×</span></div>
             <div class="workbench-body">
               <div class="ae-workspace">
                 <div class="comp-tab"><span class="comp-symbol" aria-hidden="true">▣</span> Composition <span class="muted">/ Untitled</span></div>
                 <div class="composition">
                   <div class="canvas-grid" aria-hidden="true"></div>
-                  <div class="composition-design" aria-hidden="true">
-                    <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span>
-                    <span class="scene-kicker">A LITTLE LESS CLICKING.</span>
-                    <div class="motion-title"><span class="title-line first-line">make it</span><span class="title-line second-line">move<span class="title-period">.</span></span></div>
-                    <span class="canvas-caption">MORE ROOM TO CREATE.</span>
+                  <div class="composition-result">
+                    <img id="demo-result-image" src="/examples/dashboard-reference.svg" alt="Dashboard layout recreated as editable After Effects layers" width="520" height="370">
+                    <span class="selection-outline" aria-hidden="true"></span>
                   </div>
                   <div class="canvas-foot" aria-hidden="true"><span>50%</span><span>00:00:01:12</span><span>Full</span></div>
                 </div>
                 <div class="timeline" aria-hidden="true">
                   <div class="timeline-ruler"><span>Layers</span><span>00:00 &nbsp; 01:00 &nbsp; 02:00</span></div>
-                  <div class="timeline-row"><span><i class="layer-swatch"></i><b>T</b> make it</span><div class="layer-track"><i class="keyframe"></i><i class="keyframe keyframe-end"></i></div></div>
-                  <div class="timeline-row"><span><i class="layer-swatch"></i><b>T</b> move.</span><div class="layer-track track-two"><i class="keyframe"></i><i class="keyframe keyframe-end"></i></div></div>
-                  <div class="timeline-row"><span><i class="layer-swatch shape-swatch"></i><b>◇</b> Circle</span><div class="layer-track track-three"><i class="keyframe"></i><i class="keyframe keyframe-end"></i></div></div>
+                  <div class="timeline-row"><span><i class="layer-swatch"></i><b>T</b> <span data-layer-label="0">Heading</span></span><div class="layer-track"><i class="keyframe"></i><i class="keyframe keyframe-end"></i></div></div>
+                  <div class="timeline-row"><span><i class="layer-swatch"></i><b>◇</b> <span data-layer-label="1">Cards</span></span><div class="layer-track track-two"><i class="keyframe"></i><i class="keyframe keyframe-end"></i></div></div>
+                  <div class="timeline-row"><span><i class="layer-swatch shape-swatch"></i><b>◇</b> <span data-layer-label="2">Chart</span></span><div class="layer-track track-three"><i class="keyframe"></i><i class="keyframe keyframe-end"></i></div></div>
                   <div class="playhead"></div>
                 </div>
               </div>
               <div class="flux-panel">
                 <div class="panel-heading"><span class="hamburger" aria-hidden="true">☰</span><span class="panel-brand"><span class="brand-dot" aria-hidden="true"></span>flux</span><span class="panel-more" aria-hidden="true">···</span></div>
                 <div class="panel-messages">
-                  <div class="example-label">EXAMPLE</div>
-                  <p class="demo-user" id="demo-prompt">Bring the title in.<br>Stagger the two lines.</p>
-                  <div class="demo-reply"><span class="reply-dot" aria-hidden="true"></span><p id="demo-reply">Added the motion.<br>Both lines stay editable.</p></div>
+                  <div class="example-label">EXAMPLE WORKFLOW</div>
+                  <figure class="reference-attachment">
+                    <img id="demo-reference-image" src="/examples/dashboard-reference.svg" alt="Reference image of a dashboard with cards and an orange chart" width="520" height="370">
+                    <figcaption id="demo-reference-name">dashboard.png</figcaption>
+                  </figure>
+                  <p class="demo-user" id="demo-prompt">Recreate this dashboard.<br>Keep the cards, chart and text editable.</p>
+                  <div class="demo-reply"><span class="reply-dot" aria-hidden="true"></span><p id="demo-reply">Built with shape and text layers.<br>Each part stays editable.</p></div>
                 </div>
                 <div class="panel-composer" aria-hidden="true"><span>What’s next?</span><div><span class="composer-plus">+</span><span class="composer-send">↑</span></div></div>
               </div>
@@ -74,13 +76,12 @@
           </div>
           <div class="demo-controls">
             <div class="scenario-options" role="group" aria-label="Preview examples">
-              <button type="button" class="scenario active" data-example="type" aria-pressed="true">Type</button>
-              <button type="button" class="scenario" data-example="motion" aria-pressed="false">Motion</button>
-              <button type="button" class="scenario" data-example="layout" aria-pressed="false">Layout</button>
+              <button type="button" class="scenario active" data-example="ui" aria-pressed="true">Recreate a UI</button>
+              <button type="button" class="scenario" data-example="speaker" aria-pressed="false">2D → 3D scene</button>
             </div>
             <button class="replay" id="replay" type="button" aria-label="Replay the example animation"><span aria-hidden="true">↺</span> Replay</button>
           </div>
-          <p class="demo-description" id="demo-description" aria-live="polite">A small edit. Still your timeline.</p>
+          <p class="demo-description" id="demo-description" aria-live="polite">Reference image → editable AE layout. Illustrative example.</p>
         </div>
       </section>
 
