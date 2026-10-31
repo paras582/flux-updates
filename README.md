@@ -16,6 +16,6 @@ An AI assistant for Adobe After Effects. Connect your ChatGPT or Claude account,
 3. Reopen After Effects and go to **Window → Extensions → Flux**.
 4. Connect your account in **Settings → Account**.
 
-Requires After Effects 2022 or newer. One download serves Mac and Windows; Windows support is currently in testing. Claude sign-in also requires [Claude Code](https://code.claude.com/docs/en/setup).
+Requires After Effects 2022 or newer. One download serves Mac and Windows; Claude sign-in also requires [Claude Code](https://code.claude.com/docs/en/setup).
 
 For future updates, open **Settings → Updates** in Flux.
